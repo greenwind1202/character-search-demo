@@ -1,0 +1,18 @@
+version: "3.2"
+
+services:
+  app:
+    build:
+      context: ./
+      dockerfile: ./Dockerfile
+    container_name: app
+    entrypoint: bash -c "npm install && npm start"
+    volumes:
+      - ./src:/app/src
+      - type: bind
+        source: ./package.json
+        target: /app/package.json
+    ports:
+      - 3000:3000
+    restart: always
+
