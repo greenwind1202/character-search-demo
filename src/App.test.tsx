@@ -1,6 +1,4 @@
-import React from 'react';
 import { render, screen, act, fireEvent } from '@testing-library/react';
-import userEvent from '@testing-library/user-event';
 import App from './App';
 
 global.fetch = jest.fn(() =>
