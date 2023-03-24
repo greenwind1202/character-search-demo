@@ -32,7 +32,3 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 - Build and run application on Docker
 - Add Prettier config.
 
-# Incompleted items
-
-- Writing UT test
-- Creating command to check code by ESLint
